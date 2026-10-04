@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Web Viewer</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    header {
+      padding: 15px;
+      display: flex;
+      gap: 10px;
+      background: #222;
+    }
+
+    input {
+      flex: 1;
+      padding: 12px;
+      border: 0;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 8px;
+      background: #4f8cff;
+      color: white;
+      font-weight: bold;
+    }
+
+    iframe {
+      width: 100%;
+      height: calc(100vh - 75px);
+      border: none;
+      background: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <input
+      id="url"
+      type="text"
+      placeholder="Escribe una página web..."
+    >
+
+    <button id="openButton">Abrir</button>
+  </header>
+
+  <iframe id="viewer"></iframe>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
